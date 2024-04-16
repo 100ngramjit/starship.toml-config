@@ -6,10 +6,10 @@ $os\
 $username\
 [](bg:color_yellow fg:color_orange)\
 $directory\
-[](fg:color_yellow bg:color_aqua)\
+[](fg:color_yellow bg:color_blue)\
 $git_branch\
 $git_status\
-[](fg:color_aqua bg:color_aqua)\
+[](fg:color_blue bg:color_blue)\
 $c\
 $rust\
 $golang\
@@ -18,7 +18,7 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:color_aqua bg:color_bg3)\
+[](fg:color_blue bg:color_bg3)\
 $docker_context\
 $conda\
 [](fg:color_bg3 bg:color_bg1)\
@@ -32,7 +32,7 @@ palette = 'gruvbox_dark'
 color_fg0 = '#212121'  # Grey 900
 color_bg1 = '#FFFFFF'  # White
 color_bg3 = '#F5F5F5'  # Grey 100
-color_blue = '#1A8FE3'  # Blue 500
+color_blue = '#2196F3'  # Blue 500
 color_aqua = '#00BCD4'  # Cyan 400
 color_green = '#4CAF50'  # Green 500
 color_orange = '#F17105'  # Orange 500
@@ -78,21 +78,14 @@ format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
-"Developer" = "󰲋 "
-
 [git_branch]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
+style = "bg:color_blue"
+format = '[[ $symbol $branch](fg:color_fg0 bg:color_blue)]($style)'
 
 [git_status]
-style = "bg:color_aqua"
-format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
+style = "bg:color_blue"
+format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_blue)]($style)'
 
 [c]
 symbol = " "
@@ -147,7 +140,7 @@ format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
 disabled = false
 time_format = "%R"
 style = "bg:color_bg1"
-format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
+format = '[[ $time](fg:color_fg0 bg:color_bg1)]($style)'
 
 [line_break]
 disabled = false
